@@ -1,0 +1,7 @@
+#!/bin/bash -e
+
+while true
+do
+    ./build
+    sleep 1
+done
