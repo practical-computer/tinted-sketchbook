@@ -1,7 +1,7 @@
 system: "base16"
 name: "Practical Apple"
 author: "Thomas Cannon (https://github.com/tcannonfodder)"
-variant: "light"
+variant: "dark"
 palette:
   base00: "#151819"
   base01: "#1a2121"
