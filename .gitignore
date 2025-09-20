@@ -1,6 +1,7 @@
 node_modules/
 _site/
 base16/templates/*/themes/*
+base16/templates/*/color-schemes/*
 !base16/templates/*/themes/.keep
 tinted-builder-rust
 .DS_Store
