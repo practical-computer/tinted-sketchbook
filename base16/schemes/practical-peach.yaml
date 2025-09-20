@@ -3,19 +3,19 @@ name: "Practical Peach"
 author: "Thomas Cannon (https://github.com/tcannonfodder)"
 variant: "light"
 palette:
-  base00: "#FFFBF7"
-  base01: "#FFEDDE"
-  base02: "#FFE9D6"
-  base03: "#BFAFA1"
-  base04: "#80756B"
-  base05: "#2C393A"
-  base06: "#403A36"
-  base07: "#181818"
-  base08: "#92211F"
-  base09: "#B5613F"
-  base0A: "#F18154"
-  base0B: "#4c8a4c"
-  base0C: "#3EA495"
-  base0D: "#4E9AC3"
-  base0E: "#775ea8"
-  base0F: "#80756B"
+  base00: "#FFFBF7" # ---- light
+  base01: "#FFEDDE" # ---
+  base02: "#FFE9D6" # --
+  base03: "#BFAFA1" # -
+  base04: "#80756B" # +
+  base05: "#2C393A" # ++ (Text Color)
+  base06: "#403A36" # +++
+  base07: "#181818" # ++++ dark
+  base08: "#92211F" # red
+  base09: "#B5613F" # orange
+  base0A: "#F18154" # yellow
+  base0B: "#4c8a4c" # green (Strings)
+  base0C: "#3EA495" # cyan
+  base0D: "#4E9AC3" # blue
+  base0E: "#775ea8" # purple
+  base0F: "#80756B" # brown
