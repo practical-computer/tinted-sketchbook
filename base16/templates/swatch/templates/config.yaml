@@ -1,0 +1,4 @@
+default:
+  extension: .html
+  output: themes
+  prefix: ""
