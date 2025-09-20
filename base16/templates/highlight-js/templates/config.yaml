@@ -1,0 +1,8 @@
+default:
+  extension: .css
+  output: themes
+  prefix: ""
+example:
+  extension: .html
+  output: themes
+  prefix: ""

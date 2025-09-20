@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{{scheme-name}}}</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+  >
+
+  <link rel="stylesheet" href="{{{scheme-system}}}-{{{scheme-slug}}}.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/go.min.js"></script>
+
+  <script>hljs.highlightAll();</script>
+</head>
+<body>
+
+  <h1>{{{scheme-name}}} <code>{{{scheme-slug}}}</code></h1>
+
+  <pre><code class="language-ruby">
+    require "gem"
+
+    string = "base16"
+    symbol = :base16
+    fixnum = 0
+    float  = 0.00
+    array  = Array.new
+    array  = ['chris', 85]
+    hash   = {"test" => "test"}
+    regexp = /[abc]/
+
+    # This is a comment
+    class Person
+      
+      attr_accessor :name
+      
+      def initialize(attributes = {})
+        @name = attributes[:name]
+      end
+      
+      def self.greet
+        "hello"
+      end
+    end
+
+    person1 = Person.new(:name => "Chris")
+    print Person::greet, " ", person1.name, "\n"
+    puts "another #{Person::greet} #{person1.name}"
+  </code></pre>
+</body>
+</html>
