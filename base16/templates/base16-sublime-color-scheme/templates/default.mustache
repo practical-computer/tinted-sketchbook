@@ -1,0 +1,267 @@
+{
+  "name": "{{scheme-system}} {{scheme-name}}",
+  "author": "Template: Chris Kempson, Conversion: Sublime Text Plugin Development, Scheme: {{scheme-author}}",
+  "variables": {
+    "black": "#{{base00-hex}}",
+    "blue": "#{{base0D-hex}}",
+    "cyan": "#{{base0C-hex}}",
+    "green": "#{{base0B-hex}}",
+    "green2": "#{{base03-hex}}",
+    "orange": "#{{base0A-hex}}",
+    "pink": "#{{base0E-hex}}",
+    "purple": "#{{base02-hex}}",
+    "red": "#{{base0F-hex}}",
+    "red2": "#{{base08-hex}}",
+    "red3": "#{{base09-hex}}",
+    "white": "#{{base07-hex}}",
+    "white2": "#{{base05-hex}}",
+    "name-tag": "#CF5654"
+  },
+  "globals": {
+    "foreground": "var(white2)",
+    "background": "var(black)",
+    "caret": "var(white2)",
+    "invisibles": "var(green2)",
+    "line_highlight": "color(var(green2) alpha(0.33))",
+    "selection": "var(purple)"
+  },
+  "rules": [
+    {
+      "name": "Text",
+      "scope": "variable.parameter.function",
+      "foreground": "var(white2)"
+    },
+    {
+      "name": "Comments",
+      "scope": "comment, punctuation.definition.comment",
+      "foreground": "var(green2)"
+    },
+    {
+      "name": "Punctuation",
+      "scope": "punctuation.definition.string, punctuation.definition.variable, punctuation.definition.string, punctuation.definition.parameters, punctuation.definition.string, punctuation.definition.array",
+      "foreground": "var(white2)"
+    },
+    {
+      "name": "Delimiters",
+      "scope": "none",
+      "foreground": "var(white2)"
+    },
+    {
+      "name": "Operators",
+      "scope": "keyword.operator",
+      "foreground": "var(white2)"
+    },
+    {
+      "name": "Keywords",
+      "scope": "keyword",
+      "foreground": "var(pink)"
+    },
+    {
+      "name": "Variables",
+      "scope": "variable",
+      "foreground": "var(red2)"
+    },
+    {
+      "name": "Functions",
+      "scope": "entity.name.function, meta.require, support.function.any-method, variable.function, variable.annotation, support.macro",
+      "foreground": "var(blue)"
+    },
+    {
+      "name": "Labels",
+      "scope": "entity.name.label",
+      "foreground": "var(red)"
+    },
+    {
+      "name": "Classes",
+      "scope": "support.class, entity.name.class, entity.name.type.class",
+      "foreground": "var(orange)"
+    },
+    {
+      "name": "Classes",
+      "scope": "meta.class",
+      "foreground": "var(white)"
+    },
+    {
+      "name": "Methods",
+      "scope": "keyword.other.special-method",
+      "foreground": "var(blue)"
+    },
+    {
+      "name": "Storage",
+      "scope": "storage",
+      "foreground": "var(pink)"
+    },
+    {
+      "name": "Support",
+      "scope": "support.function",
+      "foreground": "var(cyan)"
+    },
+    {
+      "name": "Strings, Inherited Class",
+      "scope": "string, constant.other.symbol, entity.other.inherited-class",
+      "foreground": "var(green)"
+    },
+    {
+      "name": "Integers",
+      "scope": "constant.numeric",
+      "foreground": "var(red3)"
+    },
+    {
+      "name": "Floats",
+      "scope": "none",
+      "foreground": "var(red3)"
+    },
+    {
+      "name": "Boolean",
+      "scope": "none",
+      "foreground": "var(red3)"
+    },
+    {
+      "name": "Constants",
+      "scope": "constant",
+      "foreground": "var(red3)"
+    },
+    {
+      "name": "Tags",
+      "scope": "entity.name.tag",
+      "foreground": "var(red2)"
+    },
+    {
+      "name": "Attributes",
+      "scope": "entity.other.attribute-name",
+      "foreground": "var(red3)"
+    },
+    {
+      "name": "Attribute IDs",
+      "scope": "entity.other.attribute-name.id, punctuation.definition.entity",
+      "foreground": "var(blue)"
+    },
+    {
+      "name": "Selector",
+      "scope": "meta.selector",
+      "foreground": "var(pink)"
+    },
+    {
+      "name": "Values",
+      "scope": "none",
+      "foreground": "var(red3)"
+    },
+    {
+      "name": "Headings",
+      "scope": "markup.heading punctuation.definition.heading, entity.name.section",
+      "foreground": "var(blue)"
+    },
+    {
+      "name": "Units",
+      "scope": "keyword.other.unit",
+      "foreground": "var(red3)"
+    },
+    {
+      "name": "Bold",
+      "scope": "markup.bold, punctuation.definition.bold",
+      "foreground": "var(orange)",
+      "font_style": "bold"
+    },
+    {
+      "name": "Italic",
+      "scope": "markup.italic, punctuation.definition.italic",
+      "foreground": "var(pink)",
+      "font_style": "italic"
+    },
+    {
+      "name": "Code",
+      "scope": "markup.raw.inline",
+      "foreground": "var(green)"
+    },
+    {
+      "name": "Link Text",
+      "scope": "string.other.link, punctuation.definition.string.end.markdown, punctuation.definition.string.begin.markdown",
+      "foreground": "var(red2)"
+    },
+    {
+      "name": "Link Url",
+      "scope": "meta.link",
+      "foreground": "var(red3)"
+    },
+    {
+      "name": "Lists",
+      "scope": "markup.list",
+      "foreground": "var(red2)"
+    },
+    {
+      "name": "Quotes",
+      "scope": "markup.quote",
+      "foreground": "var(red3)"
+    },
+    {
+      "name": "Separator",
+      "scope": "meta.separator",
+      "foreground": "var(white2)",
+      "background": "var(purple)"
+    },
+    {
+      "name": "Inserted",
+      "scope": "markup.inserted",
+      "foreground": "var(green)"
+    },
+    {
+      "name": "Deleted",
+      "scope": "markup.deleted",
+      "foreground": "var(red2)"
+    },
+    {
+      "name": "Changed",
+      "scope": "markup.changed",
+      "foreground": "var(pink)"
+    },
+    {
+      "name": "Colors",
+      "scope": "constant.other.color",
+      "foreground": "var(cyan)"
+    },
+    {
+      "name": "Regular Expressions",
+      "scope": "string.regexp",
+      "foreground": "var(cyan)"
+    },
+    {
+      "name": "Escape Characters",
+      "scope": "constant.character.escape",
+      "foreground": "var(cyan)"
+    },
+    {
+      "name": "Embedded",
+      "scope": "punctuation.section.embedded, variable.interpolation",
+      "foreground": "var(pink)"
+    },
+    {
+      "name": "Illegal",
+      "scope": "invalid.illegal",
+      "foreground": "var(white)",
+      "background": "var(red2)"
+    },
+    {
+      "name": "Broken",
+      "scope": "invalid.broken",
+      "foreground": "var(black)",
+      "background": "var(red3)"
+    },
+    {
+      "name": "Deprecated",
+      "scope": "invalid.deprecated",
+      "foreground": "var(white)",
+      "background": "var(red)"
+    },
+    {
+      "name": "Unimplemented",
+      "scope": "invalid.unimplemented",
+      "foreground": "var(white)",
+      "background": "var(green2)"
+    },
+    {
+        "name": "Mapping Key Names",
+        "scope": "meta.mapping.key string",
+        "foreground": "var(name-tag)"
+    }
+  ]
+}
