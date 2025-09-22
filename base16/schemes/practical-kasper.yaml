@@ -1,6 +1,7 @@
 system: "base16"
-name: "Practical Apple"
+name: "Practical Kasper"
 author: "Thomas Cannon (https://github.com/tcannonfodder)"
+description: "For making a grand entrance."
 variant: "dark"
 palette:
   base00: "#021719" # ---- dark
