@@ -2,32 +2,32 @@
 {
   "variables":
   {
-    "ultra-light-accent": "color(var(--accent) l(95%)",
-    "light-accent": "color(var(--accent) l(85%)",
-    "light_bg": "color(var(--accent) l(+ 50%)",
-    "dark-accent": "color(var(--accent) l(10%) s(5s0%)",
-    "medium_dark_bg": "color(var(--accent) l(10%) s(+90%)",
-    "dark_bg": "color(var(--accent) l(+20%) s(20%)",
-    "dark_selected_icon_tint": "color( l(90%) s(+90%))",
-
     "viewport_always_visible_color": "color(var(--accent) a(0.4))",
     "file_tab_unselected_light_label_color": "color(var(--accent))",
     "file_tab_selected_light_tint": "blue",
-    "tabset_light_bg": "var(light-accent)",
-    "tabset_medium_dark_bg": "var(dark-accent)",
-    "tabset_dark_bg":"var(dark_bg)",
 
     "sheet_light_modifier": "white",
     "sheet_medium_dark_modifier": "white",
 
     // Light-mode specific overrides
+    "light_title_bar": "#F3D5D4",
+    "tabset_light_bg": "#FFF6EF",
+    "quick_panel_bg": "#E9E4F8",
+    "light_bg": "#FFFBF7",
+    "light_title_bar_text": "#021719",
+    "file_light-panel_trim_bg": "#F3D5D4",
 
     // Dark-mode specific overrides
-    // "--accent": "#40362D",
+    "dark-accent": "color(var(--accent) l(10%) s(5s0%)",
+    "tabset_medium_dark_bg": "var(dark-accent)",
+    "tabset_dark_bg":"var(dark_bg)",
     "file_dark-tabset_medium_dark_bg": "color(var(--accent) l(+5%) s(10%)",
     "file_dark-medium_dark_bg": "#BFA188",
     "file_dark-panel_trim_bg": "#40362D",
     "file_dark-quick_panel_row_bg": "color(var(--accent) l(+0%) s(30%)",
+    "medium_dark_bg": "color(var(--accent) l(10%) s(+90%)",
+    "dark_bg": "color(var(--accent) l(+20%) s(20%)",
+    "dark_selected_icon_tint": "color( l(90%) s(+90%))",
   },
   "rules":
   [
@@ -38,13 +38,16 @@
       "bg": "var(dark-accent)",
       "style": "dark"
     },
+    {
+      "class": "title_bar",
+      "settings": ["themed_title_bar"],
+      "attributes": ["file_light"],
+      "bg": "var(light_title_bar)",
+      "fg": "var(light_title_bar_text)",
+      "style": "dark"
+    },
 
     // Sidebar styling
-    {
-      "class": "sidebar_container",
-      "parents": [{"class": "window", "attributes": ["file_light"]}],
-      "layer0.tint": "var(tabset_light_bg)",
-    },
     {
       "class": "sidebar_container",
       "parents": [{"class": "window", "attributes": ["file_dark"]}],
@@ -88,18 +91,40 @@
       "parents": [{"class": "window", "attributes": ["file_dark"]}],
       "layer0.tint": "var(file_dark-panel_trim_bg)",
     },
-
     {
       "class": "status_bar",
       "parents": [{"class": "window", "attributes": ["file_dark"]}],
       "layer0.tint": "var(file_dark-panel_trim_bg)",
     },
-
     {
       "class": "switch_project_panel_cancel_container",
       "parents": [{"class": "window", "attributes": ["file_dark"]}],
       "layer0.tint": "var(file_dark-panel_trim_bg)",
     },
+
+    {
+      "class": "quick_panel",
+      "parents": [{"class": "window", "attributes": ["file_light"]}],
+      "layer0.tint": "var(quick_panel_bg)",
+      "dark_content": false
+    },
+    {
+      "class": "panel_control",
+      "parents": [{"class": "window", "attributes": ["file_light"]}],
+      "layer0.tint": "var(file_light-panel_trim_bg)",
+    },
+    {
+      "class": "status_bar",
+      "parents": [{"class": "window", "attributes": ["file_light"]}],
+      "layer0.tint": "var(file_light-panel_trim_bg)",
+    },
+    {
+      "class": "switch_project_panel_cancel_container",
+      "parents": [{"class": "window", "attributes": ["file_light"]}],
+      "layer0.tint": "var(file_light-panel_trim_bg)",
+    },
+
+    // Icons
     {
       "class": "icon_case",
       "parents": [{"class": "window", "attributes": ["file_dark"]}],
