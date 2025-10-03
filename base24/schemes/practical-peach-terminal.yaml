@@ -1,0 +1,30 @@
+system: "base24"
+name: "Practical Peach (Terminal)"
+author: "Thomas Cannon (https://github.com/tcannonfodder)"
+description: "The Terminal version of the Peach theme"
+variant: "light"
+palette:
+  base00: "#FFE9D6" # Black
+  base01: "#FFEDDE" # (Darkest Gray)
+  base02: "#BFAFA1" # Bright Black [Selection]
+  base03: "#BFAFA1" # (Gray)
+  base04: "#80756B" # (Light Gray)
+  base05: "#2C393A" # Foreground
+  base06: "#403A36" # White
+  base07: "#181818" # Bright White
+  base08: "#C32C29" # Red
+  base09: "#F18154" # (Orange) [Bold Text]
+  base0A: "#B28320" # Yellow
+  base0B: "#4A634A" # Green
+  base0C: "#0E8D7A" # Cyan
+  base0D: "#2B83AD" # Blue
+  base0E: "#755FED" # Magenta
+  base0F: "#92211F" # (Dark Red or Brown)
+  base10: "#FFF6EF" # (Darker Black)
+  base11: "#FFFFFF" # (Darkest Black)
+  base12: "#DB807F" # Bright Red
+  base13: "#EDAE2A" # Bright Yellow
+  base14: "#94C693" # Bright Green
+  base15: "#9FD1CA" # Bright Cyan
+  base16: "#A4CCE3" # Bright Blue
+  base17: "#CCCDF3" # Bright Magenta
