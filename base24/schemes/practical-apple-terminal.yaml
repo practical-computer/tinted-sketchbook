@@ -1,0 +1,30 @@
+system: "base24"
+name: "Practical Apple (Terminal)"
+author: "Thomas Cannon (https://github.com/tcannonfodder)"
+description: "The Terminal version of the Apple theme"
+variant: "dark"
+palette:
+  base00: "#272038" # Black
+  base01: "#2C4E2C" # (Darkest Gray)
+  base02: "#162716" # Bright Black [Selection]
+  base03: "#2C4E2C" # (Gray)
+  base04: "#79AF79" # (Light Gray)
+  base05: "#E5E6E6" # Foreground
+  base06: "#FFF6EF" # White
+  base07: "#FFFBF7" # Bright White
+  base08: "#C32C29" # Red
+  base09: "#F18154" # (Orange) [Bold Text]
+  base0A: "#EDAE2A" # Yellow
+  base0B: "#94C693" # Green
+  base0C: "#6DA097" # Cyan
+  base0D: "#2B83AD" # Blue
+  base0E: "#755FED" # Magenta
+  base0F: "#92211F" # (Dark Red or Brown)
+  base10: "#161C1D" # (Darker Black)
+  base11: "#021719" # (Darkest Black)
+  base12: "#DB807F" # Bright Red
+  base13: "#F4CE7F" # Bright Yellow
+  base14: "#BFDDBE" # Bright Green
+  base15: "#CEDFDC" # Bright Cyan
+  base16: "#A4CCE3" # Bright Blue
+  base17: "#CCCDF3" # Bright Magenta

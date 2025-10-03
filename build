@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+./tinted-builder-rust build base24/templates/swatch -s base24/schemes
+
 ./tinted-builder-rust build base16/templates/swatch -s base16/schemes
 ./tinted-builder-rust build base16/templates/highlight-js -s base16/schemes
 ./tinted-builder-rust build base16/templates/tinted-sublime-text -s base16/schemes

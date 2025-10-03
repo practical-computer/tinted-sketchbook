@@ -5,3 +5,7 @@ base16/templates/*/color-schemes/*
 !base16/templates/*/themes/.keep
 tinted-builder-rust
 .DS_Store
+
+base24/templates/*/themes/*
+base24/templates/*/color-schemes/*
+!base24/templates/*/themes/.keep

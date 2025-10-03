@@ -1,0 +1,5 @@
+default:
+  extension: .html
+  output: themes
+  prefix: ""
+  supported-systems: [base24]
